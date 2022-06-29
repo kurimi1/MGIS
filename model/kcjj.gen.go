@@ -17,7 +17,7 @@ type Kcjj struct {
 	JJGJAD float64 `gorm:"column:JJGJAD" json:"JJGJAD"`
 	JJGJDF float32 `gorm:"column:JJGJDF" json:"JJGJDF"`
 	JJGKC  int32   `gorm:"column:JJGKC" json:"JJGKC"`
-	数据     string  `gorm:"column:数据" json:"数据"`
+	Shuju     string  `gorm:"column:数据" json:"数据"`
 }
 
 // TableName Kcjj's table name

@@ -28,7 +28,7 @@ type Kckc struct {
 	PKIIJ  string  `gorm:"column:PKIIJ" json:"PKIIJ"`
 	PKIIL  string  `gorm:"column:PKIIL" json:"PKIIL"`
 	MEMO   string  `gorm:"column:MEMO" json:"MEMO"`
-	数据     string  `gorm:"column:数据" json:"数据"`
+	Shuju     string  `gorm:"column:数据" json:"数据"`
 }
 
 // TableName Kckc's table name

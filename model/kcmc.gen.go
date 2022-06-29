@@ -18,7 +18,7 @@ type Kcmc struct {
 	MDCDC  float32 `gorm:"column:MDCDC" json:"MDCDC"`
 	MDCDF  float32 `gorm:"column:MDCDF" json:"MDCDF"`
 	MDEG   string  `gorm:"column:MDEG" json:"MDEG"`
-	数据     string  `gorm:"column:数据" json:"数据"`
+	Shuju     string  `gorm:"column:数据" json:"数据"`
 }
 
 // TableName Kcmc's table name

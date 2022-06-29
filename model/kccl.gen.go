@@ -19,7 +19,7 @@ type Kccl struct {
 	PKCABT float64 `gorm:"column:PKCABT" json:"PKCABT"`
 	PKCABU float64 `gorm:"column:PKCABU" json:"PKCABU"`
 	PKCABV float64 `gorm:"column:PKCABV" json:"PKCABV"`
-	数据     string  `gorm:"column:数据" json:"数据"`
+	Shuju     string  `gorm:"column:数据" json:"数据"`
 }
 
 // TableName Kccl's table name

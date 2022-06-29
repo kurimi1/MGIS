@@ -30,7 +30,7 @@ type Kttz struct {
 	PKGKPH string  `gorm:"column:PKGKPH" json:"PKGKPH"`
 	PKGKTA string  `gorm:"column:PKGKTA" json:"PKGKTA"`
 	PKGKT  string  `gorm:"column:PKGKT" json:"PKGKT"`
-	数据     string  `gorm:"column:数据" json:"数据"`
+	Shuju     string  `gorm:"column:数据" json:"数据"`
 }
 
 // TableName Kttz's table name

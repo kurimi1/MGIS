@@ -22,7 +22,7 @@ type Kcj struct {
 	BPJ    int32   `gorm:"column:BPJ" json:"BPJ"`
 	BPWDX  string  `gorm:"column:BPWDX" json:"BPWDX"`
 	DDBWDX string  `gorm:"column:DDBWDX" json:"DDBWDX"`
-	数据     string  `gorm:"column:数据" json:"数据"`
+	Shuju     string  `gorm:"column:数据" json:"数据"`
 }
 
 // TableName Kcj's table name

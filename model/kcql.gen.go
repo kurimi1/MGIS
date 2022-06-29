@@ -18,7 +18,7 @@ type Kcql struct {
 	MDEG   string  `gorm:"column:MDEG" json:"MDEG"`
 	MDBFNQ string  `gorm:"column:MDBFNQ" json:"MDBFNQ"`
 	PKBBB  float64 `gorm:"column:PKBBB" json:"PKBBB"`
-	数据     string  `gorm:"column:数据" json:"数据"`
+	Shuju     string  `gorm:"column:数据" json:"数据"`
 }
 
 // TableName Kcql's table name

@@ -26,7 +26,7 @@ type Mctz struct {
 	MDBK   float32 `gorm:"column:MDBK" json:"MDBK"`
 	MDBMB  string  `gorm:"column:MDBMB" json:"MDBMB"`
 	MDBMF  string  `gorm:"column:MDBMF" json:"MDBMF"`
-	数据     string  `gorm:"column:数据" json:"数据"`
+	Shuju     string  `gorm:"column:数据" json:"数据"`
 }
 
 // TableName Mctz's table name

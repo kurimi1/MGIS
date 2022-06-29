@@ -1,0 +1,213 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "",
+    "version": ""
+  },
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/api/K": {
+      "get": {
+        "summary": "获取矿产地基本情况",
+        "operationId": "List",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/Response"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "province",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "mine",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "size",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "tags": [
+          "MGIS-api"
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "Kcdj": {
+      "type": "object",
+      "properties": {
+        "KCAAA": {
+          "type": "string"
+        },
+        "KCC": {
+          "type": "string"
+        },
+        "JJDAJ": {
+          "type": "string"
+        },
+        "JJGLA": {
+          "type": "string"
+        },
+        "DWAAC": {
+          "type": "string"
+        },
+        "DWAAD": {
+          "type": "string"
+        },
+        "KCBA": {
+          "type": "string"
+        },
+        "KCCA": {
+          "type": "string"
+        },
+        "KCCB": {
+          "type": "string"
+        },
+        "PKGKB": {
+          "type": "string"
+        },
+        "KCAOC": {
+          "type": "string"
+        },
+        "KCAOAE": {
+          "type": "string"
+        },
+        "KCAOAF": {
+          "type": "string"
+        },
+        "PKD": {
+          "type": "string"
+        },
+        "JJDCBF": {
+          "type": "string"
+        },
+        "数据": {
+          "type": "string"
+        }
+      },
+      "title": "Kcdj",
+      "required": [
+        "column:KCAAA",
+        "KCAAA",
+        "column:KCC",
+        "KCC",
+        "column:JJDAJ",
+        "JJDAJ",
+        "column:JJGLA",
+        "JJGLA",
+        "column:DWAAC",
+        "DWAAC",
+        "column:DWAAD",
+        "DWAAD",
+        "column:KCBA",
+        "KCBA",
+        "column:KCCA",
+        "KCCA",
+        "column:KCCB",
+        "KCCB",
+        "column:PKGKB",
+        "PKGKB",
+        "column:KCAOC",
+        "KCAOC",
+        "column:KCAOAE",
+        "KCAOAE",
+        "column:KCAOAF",
+        "KCAOAF",
+        "column:PKD",
+        "PKD",
+        "column:JJDCBF",
+        "JJDCBF",
+        "column:数据",
+        "数据"
+      ]
+    },
+    "Request": {
+      "type": "object",
+      "properties": {
+        "province": {
+          "type": "string"
+        },
+        "mine": {
+          "type": "string"
+        },
+        "page": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "size": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "title": "Request",
+      "required": [
+        "province",
+        "page",
+        "size"
+      ]
+    },
+    "Response": {
+      "type": "object",
+      "properties": {
+        "total": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "kcdjs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Kcdj"
+          },
+          "description": " 矿产地基本情况"
+        }
+      },
+      "title": "Response",
+      "required": [
+        "total",
+        "kcdjs"
+      ]
+    }
+  },
+  "securityDefinitions": {
+    "apiKey": {
+      "type": "apiKey",
+      "description": "Enter JWT Bearer token **_only_**",
+      "name": "Authorization",
+      "in": "header"
+    }
+  },
+  "security": [
+    {
+      "apiKey": []
+    }
+  ]
+}

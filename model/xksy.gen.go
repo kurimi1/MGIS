@@ -21,7 +21,7 @@ type Xksy struct {
 	PKGKPE string  `gorm:"column:PKGKPE" json:"PKGKPE"`
 	PKGKQ  string  `gorm:"column:PKGKQ" json:"PKGKQ"`
 	PKHFE  string  `gorm:"column:PKHFE" json:"PKHFE"`
-	数据     string  `gorm:"column:数据" json:"数据"`
+	Shuju     string  `gorm:"column:数据" json:"数据"`
 }
 
 // TableName Xksy's table name

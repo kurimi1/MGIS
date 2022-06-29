@@ -22,7 +22,7 @@ type Kqdz struct {
 	PKHFB  string  `gorm:"column:PKHFB" json:"PKHFB"`
 	DHCAA  string  `gorm:"column:DHCAA" json:"DHCAA"`
 	DHC    string  `gorm:"column:DHC" json:"DHC"`
-	数据     string  `gorm:"column:数据" json:"数据"`
+	Shuju     string  `gorm:"column:数据" json:"数据"`
 }
 
 // TableName Kqdz's table name
