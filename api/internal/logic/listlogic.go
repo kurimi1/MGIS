@@ -6,6 +6,7 @@ import (
 
 	"LGIS/api/internal/svc"
 	"LGIS/api/internal/types"
+	"LGIS/model"
 
 	"github.com/jinzhu/copier"
 	"github.com/zeromicro/go-zero/core/logx"
@@ -32,10 +33,20 @@ func (l *ListLogic) List(req *types.Request) (resp *types.Response, err error) {
 	province := fmt.Sprintf("^%s[1-9]", req.Province)
 	kcdj := l.svcCtx.Dao.Kcdj
 	// 判断mine是否为空
-	results, total, err := kcdj.WithContext(l.ctx).Where(kcdj.KCAAA.Regexp(province), kcdj.KCC.Eq(req.Mine)).FindByPage(req.Size*(req.Page-1), req.Size)
-	if err != nil {
-		return nil, err
+	var results []*model.Kcdj
+	var total int64
+	if req.Mine != "" {
+		results, total, err = kcdj.WithContext(l.ctx).Where(kcdj.KCAAA.Regexp(province), kcdj.KCC.Eq(req.Mine)).FindByPage(req.Size*(req.Page-1), req.Size)
+		if err != nil {
+			return nil, err
+		}
+	} else {
+		results, total, err = kcdj.WithContext(l.ctx).Where(kcdj.KCAAA.Regexp(province)).FindByPage(req.Size*(req.Page-1), req.Size)
+		if err != nil {
+			return nil, err
+		}
 	}
+
 	var kcdjs []types.Kcdj
 	copier.Copy(&kcdjs, &results)
 
@@ -44,3 +55,4 @@ func (l *ListLogic) List(req *types.Request) (resp *types.Response, err error) {
 		Kcdjs: kcdjs,
 	}, nil
 }
+  

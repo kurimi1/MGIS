@@ -31,7 +31,7 @@
           {
             "name": "province",
             "in": "query",
-            "required": true,
+            "required": false,
             "type": "string"
           },
           {
@@ -59,9 +59,566 @@
           "MGIS-api"
         ]
       }
+    },
+    "/api/Kccl": {
+      "get": {
+        "summary": "获取矿产储量",
+        "operationId": "Kccl",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/KcclRsp"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "province",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "mine",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "size",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        xksy
+        "tags": [
+          "MGIS-api"
+        ]
+      }
+    },
+    "/api/Kcjj": {
+      "get": {
+        "summary": "获取矿床技术经济评价",
+        "operationId": "Kcjj",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/KcjjRsp"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "province",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "mine",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "size",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        xksy
+        "tags": [
+          "MGIS-api"
+        ]
+      }
+    },
+    "/api/Kcjs": {
+      "get": {
+        "summary": "获取开采技术条件",
+        "operationId": "Kcjs",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/KcjsRsp"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "province",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "mine",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "size",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        xksy
+        "tags": [
+          "MGIS-api"
+        ]
+      }
+    },
+    "/api/Kckc": {
+      "get": {
+        "summary": "获取矿产勘查工作概况",
+        "operationId": "Kckc",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/kckcRsp"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "province",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "mine",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "size",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        xksy
+        "tags": [
+          "MGIS-api"
+        ]
+      }
+    },
+    "/api/Kcmc": {
+      "get": {
+        "summary": "获取主要可采煤层特征",
+        "operationId": "Kcmc",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/kcmcRsp"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "province",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "mine",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "size",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        xksy
+        "tags": [
+          "MGIS-api"
+        ]
+      }
+    },
+    "/api/Kcql": {
+      "get": {
+        "summary": "获取勘查区资源量",
+        "operationId": "Kcql",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/kcqlRsp"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "province",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "mine",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "size",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        xksy
+        "tags": [
+          "MGIS-api"
+        ]
+      }
+    },
+    "/api/Kqdz": {
+      "get": {
+        "summary": "获取矿区地质情况",
+        "operationId": "Kqdz",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/KqdzRsp"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "province",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "mine",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "size",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        xksy
+        "tags": [
+          "MGIS-api"
+        ]
+      }
+    },
+    "/api/Kttz": {
+      "get": {
+        "summary": "获取矿体特征",
+        "operationId": "Kttz",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/kttzRsp"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "province",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "mine",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "size",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        xksy
+        "tags": [
+          "MGIS-api"
+        ]
+      }
+    },
+    "/api/Mctz": {
+      "get": {
+        "summary": "获取煤矿体特征",
+        "operationId": "Mctz",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/mctzRsp"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "province",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "mine",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "size",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        xksy
+        "tags": [
+          "MGIS-api"
+        ]
+      }
+    },
+    "/api/Xksy": {
+      "get": {
+        "summary": "获取选矿试验",
+        "operationId": "Xksy",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/xksyRsp"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "province",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "mine",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "size",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        xksy
+        "tags": [
+          "MGIS-api"
+        ]
+      }
     }
   },
   "definitions": {
+    "Kccl": {
+      "type": "object",
+      "properties": {
+        "KCAAA": {
+          "type": "string"
+        },
+        "KCC": {
+          "type": "string"
+        },
+        "PKCE": {
+          "type": "string"
+        },
+        "PKCABF": {
+          "type": "number",
+          "format": "double"
+        },
+        "PKCABA": {
+          "type": "number",
+          "format": "double"
+        },
+        "PKCABB": {
+          "type": "number",
+          "format": "double"
+        },
+        "PKCABC": {
+          "type": "number",
+          "format": "double"
+        },
+        "PKCABD": {
+          "type": "number",
+          "format": "double"
+        },
+        "PKCABT": {
+          "type": "number",
+          "format": "double"
+        },
+        "PKCABU": {
+          "type": "number",
+          "format": "double"
+        },
+        "PKCABV": {
+          "type": "number",
+          "format": "double"
+        },
+        "数据": {
+          "type": "string"
+        }
+      },
+      "title": "Kccl",
+      "required": [
+        "column:KCAAA",
+        "KCAAA",
+        "column:KCC",
+        "KCC",
+        "column:PKCE",
+        "PKCE",
+        "column:PKCABF",
+        "PKCABF",
+        "column:PKCABA",
+        "PKCABA",
+        "column:PKCABB",
+        "PKCABB",
+        "column:PKCABC",
+        "PKCABC",
+        "column:PKCABD",
+        "PKCABD",
+        "column:PKCABT",
+        "PKCABT",
+        "column:PKCABU",
+        "PKCABU",
+        "column:PKCABV",
+        "PKCABV",
+        "column:数据",
+        "数据"
+      ]
+    },
+    "KcclRsp": {
+      "type": "object",
+      "properties": {
+        "total": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "kccls": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Kccl"
+          },
+          "description": " 矿产储量"
+        }
+      },
+      "title": "KcclRsp",
+      "required": [
+        "total",
+        "kccls"
+      ]
+    },
     "Kcdj": {
       "type": "object",
       "properties": {
@@ -150,6 +707,788 @@
         "数据"
       ]
     },
+    "Kcj": {
+      "type": "object",
+      "properties": {
+        "KCAAA": {
+          "type": "string"
+        },
+        "SWJCC": {
+          "type": "string"
+        },
+        "SWNB": {
+          "type": "string"
+        },
+        "GCAB": {
+          "type": "string"
+        },
+        "SWJDAC": {
+          "type": "number",
+          "format": "double"
+        },
+        "SWAIA": {
+          "type": "string"
+        },
+        "GCCBA": {
+          "type": "string"
+        },
+        "GCBI": {
+          "type": "string"
+        },
+        "JJGLDA": {
+          "type": "string"
+        },
+        "JJGLDB": {
+          "type": "string"
+        },
+        "BCB": {
+          "type": "string"
+        },
+        "BPJ": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "BPWDX": {
+          "type": "string"
+        },
+        "DDBWDX": {
+          "type": "string"
+        },
+        "数据": {
+          "type": "string"
+        }
+      },
+      "title": "Kcj",
+      "required": [
+        "column:KCAAA",
+        "KCAAA",
+        "column:SWJCC",
+        "SWJCC",
+        "column:SWNB",
+        "SWNB",
+        "column:GCAB",
+        "GCAB",
+        "column:SWJDAC",
+        "SWJDAC",
+        "column:SWAIA",
+        "SWAIA",
+        "column:GCCBA",
+        "GCCBA",
+        "column:GCBI",
+        "GCBI",
+        "column:JJGLDA",
+        "JJGLDA",
+        "column:JJGLDB",
+        "JJGLDB",
+        "column:BCB",
+        "BCB",
+        "column:BPJ",
+        "BPJ",
+        "column:BPWDX",
+        "BPWDX",
+        "column:DDBWDX",
+        "DDBWDX",
+        "column:数据",
+        "数据"
+      ]
+    },
+    "Kcjj": {
+      "type": "object",
+      "properties": {
+        "KCAAA": {
+          "type": "string"
+        },
+        "JJGAH": {
+          "type": "number",
+          "format": "double"
+        },
+        "JJGAL": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "JJGAM": {
+          "type": "string"
+        },
+        "JJGHD": {
+          "type": "number",
+          "format": "double"
+        },
+        "JJGDB": {
+          "type": "number",
+          "format": "double"
+        },
+        "JJGJAD": {
+          "type": "number",
+          "format": "double"
+        },
+        "JJGJDF": {
+          "type": "number",
+          "format": "float"
+        },
+        "JJGKC": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "数据": {
+          "type": "string"
+        }
+      },
+      "title": "Kcjj",
+      "required": [
+        "column:KCAAA",
+        "KCAAA",
+        "column:JJGAH",
+        "JJGAH",
+        "column:JJGAL",
+        "JJGAL",
+        "column:JJGAM",
+        "JJGAM",
+        "column:JJGHD",
+        "JJGHD",
+        "column:JJGDB",
+        "JJGDB",
+        "column:JJGJAD",
+        "JJGJAD",
+        "column:JJGJDF",
+        "JJGJDF",
+        "column:JJGKC",
+        "JJGKC",
+        "column:数据",
+        "数据"
+      ]
+    },
+    "KcjjRsp": {
+      "type": "object",
+      "properties": {
+        "total": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "kcjjs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Kcjj"
+          },
+          "description": " 矿床技术经济评价"
+        }
+      },
+      "title": "KcjjRsp",
+      "required": [
+        "total",
+        "kcjjs"
+      ]
+    },
+    "KcjsRsp": {
+      "type": "object",
+      "properties": {
+        "total": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "kcjs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Kcj"
+          },
+          "description": " 开采技术条件"
+        }
+      },
+      "title": "KcjsRsp",
+      "required": [
+        "total",
+        "kcjs"
+      ]
+    },
+    "Kckc": {
+      "type": "object",
+      "properties": {
+        "KCAAA": {
+          "type": "string"
+        },
+        "QDAM": {
+          "type": "string"
+        },
+        "QDAN": {
+          "type": "string"
+        },
+        "QDAO": {
+          "type": "string"
+        },
+        "QDAC": {
+          "type": "string"
+        },
+        "QDANA": {
+          "type": "string"
+        },
+        "PKGJ": {
+          "type": "string"
+        },
+        "PKGDDA": {
+          "type": "string"
+        },
+        "PKGDDC": {
+          "type": "string"
+        },
+        "PKGDDB": {
+          "type": "string"
+        },
+        "GCJDBC": {
+          "type": "number",
+          "format": "double"
+        },
+        "PKGCC": {
+          "type": "number",
+          "format": "double"
+        },
+        "GCJDBO": {
+          "type": "number",
+          "format": "double"
+        },
+        "PKIIA": {
+          "type": "string"
+        },
+        "PKIIG": {
+          "type": "string"
+        },
+        "PKIIH": {
+          "type": "string"
+        },
+        "PKIII": {
+          "type": "string"
+        },
+        "PKIIJ": {
+          "type": "string"
+        },
+        "PKIIL": {
+          "type": "string"
+        },
+        "MEMO": {
+          "type": "string"
+        },
+        "数据": {
+          "type": "string"
+        }
+      },
+      "title": "Kckc",
+      "required": [
+        "column:KCAAA",
+        "KCAAA",
+        "column:QDAM",
+        "QDAM",
+        "column:QDAN",
+        "QDAN",
+        "column:QDAO",
+        "QDAO",
+        "column:QDAC",
+        "QDAC",
+        "column:QDANA",
+        "QDANA",
+        "column:PKGJ",
+        "PKGJ",
+        "column:PKGDDA",
+        "PKGDDA",
+        "column:PKGDDC",
+        "PKGDDC",
+        "column:PKGDDB",
+        "PKGDDB",
+        "column:GCJDBC",
+        "GCJDBC",
+        "column:PKGCC",
+        "PKGCC",
+        "column:GCJDBO",
+        "GCJDBO",
+        "column:PKIIA",
+        "PKIIA",
+        "column:PKIIG",
+        "PKIIG",
+        "column:PKIIH",
+        "PKIIH",
+        "column:PKIII",
+        "PKIII",
+        "column:PKIIJ",
+        "PKIIJ",
+        "column:PKIIL",
+        "PKIIL",
+        "column:MEMO",
+        "MEMO",
+        "column:数据",
+        "数据"
+      ]
+    },
+    "Kcmc": {
+      "type": "object",
+      "properties": {
+        "KCAAA": {
+          "type": "string"
+        },
+        "MDAGA": {
+          "type": "string"
+        },
+        "MDBFNG": {
+          "type": "number",
+          "format": "float"
+        },
+        "MDAGP": {
+          "type": "string"
+        },
+        "MDBEB": {
+          "type": "string"
+        },
+        "MDCHWK": {
+          "type": "number",
+          "format": "float"
+        },
+        "MDHEAA": {
+          "type": "number",
+          "format": "float"
+        },
+        "MDCDC": {
+          "type": "number",
+          "format": "float"
+        },
+        "MDCDF": {
+          "type": "number",
+          "format": "float"
+        },
+        "MDEG": {
+          "type": "string"
+        },
+        "数据": {
+          "type": "string"
+        }
+      },
+      "title": "Kcmc",
+      "required": [
+        "column:KCAAA",
+        "KCAAA",
+        "column:MDAGA",
+        "MDAGA",
+        "column:MDBFNG",
+        "MDBFNG",
+        "column:MDAGP",
+        "MDAGP",
+        "column:MDBEB",
+        "MDBEB",
+        "column:MDCHWK",
+        "MDCHWK",
+        "column:MDHEAA",
+        "MDHEAA",
+        "column:MDCDC",
+        "MDCDC",
+        "column:MDCDF",
+        "MDCDF",
+        "column:MDEG",
+        "MDEG",
+        "column:数据",
+        "数据"
+      ]
+    },
+    "Kcql": {
+      "type": "object",
+      "properties": {
+        "KCAAA": {
+          "type": "string"
+        },
+        "DWAACJ": {
+          "type": "string"
+        },
+        "DWAADJ": {
+          "type": "string"
+        },
+        "MDAAC": {
+          "type": "string"
+        },
+        "MDAREA": {
+          "type": "number",
+          "format": "float"
+        },
+        "MDBA": {
+          "type": "string"
+        },
+        "MDCP": {
+          "type": "string"
+        },
+        "MDEG": {
+          "type": "string"
+        },
+        "MDBFNQ": {
+          "type": "string"
+        },
+        "PKBBB": {
+          "type": "number",
+          "format": "double"
+        },
+        "数据": {
+          "type": "string"
+        }
+      },
+      "title": "Kcql",
+      "required": [
+        "column:KCAAA",
+        "KCAAA",
+        "column:DWAACJ",
+        "DWAACJ",
+        "column:DWAADJ",
+        "DWAADJ",
+        "column:MDAAC",
+        "MDAAC",
+        "column:MDAREA",
+        "MDAREA",
+        "column:MDBA",
+        "MDBA",
+        "column:MDCP",
+        "MDCP",
+        "column:MDEG",
+        "MDEG",
+        "column:MDBFNQ",
+        "MDBFNQ",
+        "column:PKBBB",
+        "PKBBB",
+        "column:数据",
+        "数据"
+      ]
+    },
+    "Kqdz": {
+      "type": "object",
+      "properties": {
+        "KCAAA": {
+          "type": "string"
+        },
+        "PKGKAA": {
+          "type": "string"
+        },
+        "DSB": {
+          "type": "string"
+        },
+        "YSACAA": {
+          "type": "string"
+        },
+        "YSACAB": {
+          "type": "string"
+        },
+        "YSACC": {
+          "type": "string"
+        },
+        "GZAM": {
+          "type": "string"
+        },
+        "KCAJ": {
+          "type": "string"
+        },
+        "DHBIA": {
+          "type": "string"
+        },
+        "DHBHAB": {
+          "type": "number",
+          "format": "float"
+        },
+        "PKHFE": {
+          "type": "string"
+        },
+        "PKHFB": {
+          "type": "string"
+        },
+        "DHCAA": {
+          "type": "string"
+        },
+        "DHC": {
+          "type": "string"
+        },
+        "数据": {
+          "type": "string"
+        }
+      },
+      "title": "Kqdz",
+      "required": [
+        "column:KCAAA",
+        "KCAAA",
+        "column:PKGKAA",
+        "PKGKAA",
+        "column:DSB",
+        "DSB",
+        "column:YSACAA",
+        "YSACAA",
+        "column:YSACAB",
+        "YSACAB",
+        "column:YSACC",
+        "YSACC",
+        "column:GZAM",
+        "GZAM",
+        "column:KCAJ",
+        "KCAJ",
+        "column:DHBIA",
+        "DHBIA",
+        "column:DHBHAB",
+        "DHBHAB",
+        "column:PKHFE",
+        "PKHFE",
+        "column:PKHFB",
+        "PKHFB",
+        "column:DHCAA",
+        "DHCAA",
+        "column:DHC",
+        "DHC",
+        "column:数据",
+        "数据"
+      ]
+    },
+    "KqdzRsp": {
+      "type": "object",
+      "properties": {
+        "total": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "kqdzs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Kqdz"
+          },
+          "description": " 矿区地质情况"
+        }
+      },
+      "title": "KqdzRsp",
+      "required": [
+        "total",
+        "kqdzs"
+      ]
+    },
+    "Kttz": {
+      "type": "object",
+      "properties": {
+        "KCAAA": {
+          "type": "string"
+        },
+        "PKGKI": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "PKGKIA": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "PKGKDA": {
+          "type": "string"
+        },
+        "PKGKJ": {
+          "type": "string"
+        },
+        "PKGKGA": {
+          "type": "string"
+        },
+        "PKGKGB": {
+          "type": "string"
+        },
+        "PKGKGC": {
+          "type": "string"
+        },
+        "PKGKGF": {
+          "type": "string"
+        },
+        "PKGKFA": {
+          "type": "number",
+          "format": "float"
+        },
+        "PKGKFB": {
+          "type": "number",
+          "format": "float"
+        },
+        "PKCDA": {
+          "type": "number",
+          "format": "float"
+        },
+        "PKGADH": {
+          "type": "string"
+        },
+        "PKGKQ": {
+          "type": "string"
+        },
+        "KCAPA": {
+          "type": "string"
+        },
+        "KCAPB": {
+          "type": "string"
+        },
+        "KWBH": {
+          "type": "string"
+        },
+        "PKCDD": {
+          "type": "string"
+        },
+        "PKGKU": {
+          "type": "string"
+        },
+        "PKGKPH": {
+          "type": "string"
+        },
+        "PKGKTA": {
+          "type": "string"
+        },
+        "PKGKT": {
+          "type": "string"
+        },
+        "数据": {
+          "type": "string"
+        }
+      },
+      "title": "Kttz",
+      "required": [
+        "column:KCAAA",
+        "KCAAA",
+        "column:PKGKI",
+        "PKGKI",
+        "column:PKGKIA",
+        "PKGKIA",
+        "column:PKGKDA",
+        "PKGKDA",
+        "column:PKGKJ",
+        "PKGKJ",
+        "column:PKGKGA",
+        "PKGKGA",
+        "column:PKGKGB",
+        "PKGKGB",
+        "column:PKGKGC",
+        "PKGKGC",
+        "column:PKGKGF",
+        "PKGKGF",
+        "column:PKGKFA",
+        "PKGKFA",
+        "column:PKGKFB",
+        "PKGKFB",
+        "column:PKCDA",
+        "PKCDA",
+        "column:PKGADH",
+        "PKGADH",
+        "column:PKGKQ",
+        "PKGKQ",
+        "column:KCAPA",
+        "KCAPA",
+        "column:KCAPB",
+        "KCAPB",
+        "column:KWBH",
+        "KWBH",
+        "column:PKCDD",
+        "PKCDD",
+        "column:PKGKU",
+        "PKGKU",
+        "column:PKGKPH",
+        "PKGKPH",
+        "column:PKGKTA",
+        "PKGKTA",
+        "column:PKGKT",
+        "PKGKT",
+        "column:数据",
+        "数据"
+      ]
+    },
+    "Mctz": {
+      "type": "object",
+      "properties": {
+        "KCAAA": {
+          "type": "string"
+        },
+        "MDABA": {
+          "type": "string"
+        },
+        "MDAFA": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "MDAFB": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "MDAFH": {
+          "type": "number",
+          "format": "double"
+        },
+        "MDBFNG": {
+          "type": "number",
+          "format": "double"
+        },
+        "MDBEB": {
+          "type": "string"
+        },
+        "MDDABA": {
+          "type": "string"
+        },
+        "MDEG": {
+          "type": "string"
+        },
+        "MDAGI": {
+          "type": "string"
+        },
+        "MDAGO": {
+          "type": "string"
+        },
+        "MDABC": {
+          "type": "string"
+        },
+        "MDAGD": {
+          "type": "string"
+        },
+        "MDAGF": {
+          "type": "string"
+        },
+        "MDBLIA": {
+          "type": "string"
+        },
+        "MDBK": {
+          "type": "number",
+          "format": "float"
+        },
+        "MDBMB": {
+          "type": "string"
+        },
+        "MDBMF": {
+          "type": "string"
+        },
+        "数据": {
+          "type": "string"
+        }
+      },
+      "title": "Mctz",
+      "required": [
+        "column:KCAAA",
+        "KCAAA",
+        "column:MDABA",
+        "MDABA",
+        "column:MDAFA",
+        "MDAFA",
+        "column:MDAFB",
+        "MDAFB",
+        "column:MDAFH",
+        "MDAFH",
+        "column:MDBFNG",
+        "MDBFNG",
+        "column:MDBEB",
+        "MDBEB",
+        "column:MDDABA",
+        "MDDABA",
+        "column:MDEG",
+        "MDEG",
+        "column:MDAGI",
+        "MDAGI",
+        "column:MDAGO",
+        "MDAGO",
+        "column:MDABC",
+        "MDABC",
+        "column:MDAGD",
+        "MDAGD",
+        "column:MDAGF",
+        "MDAGF",
+        "column:MDBLIA",
+        "MDBLIA",
+        "column:MDBK",
+        "MDBK",
+        "column:MDBMB",
+        "MDBMB",
+        "column:MDBMF",
+        "MDBMF",
+        "column:数据",
+        "数据"
+      ]
+    },
     "Request": {
       "type": "object",
       "properties": {
@@ -170,7 +1509,6 @@
       },
       "title": "Request",
       "required": [
-        "province",
         "page",
         "size"
       ]
@@ -194,6 +1532,212 @@
       "required": [
         "total",
         "kcdjs"
+      ]
+    },
+    "Xksy": {
+      "type": "object",
+      "properties": {
+        "KCAAA": {
+          "type": "string"
+        },
+        "XYAD": {
+          "type": "string"
+        },
+        "XYAABA": {
+          "type": "string"
+        },
+        "XYABA": {
+          "type": "string"
+        },
+        "XYACF": {
+          "type": "number",
+          "format": "float"
+        },
+        "XYACB": {
+          "type": "string"
+        },
+        "XYACA": {
+          "type": "string"
+        },
+        "PKGLC": {
+          "type": "string"
+        },
+        "XYACJ": {
+          "type": "number",
+          "format": "float"
+        },
+        "XYACD": {
+          "type": "string"
+        },
+        "PKGKPE": {
+          "type": "string"
+        },
+        "PKGKQ": {
+          "type": "string"
+        },
+        "PKHFE": {
+          "type": "string"
+        },
+        "数据": {
+          "type": "string"
+        }
+      },
+      "title": "Xksy",
+      "required": [
+        "column:KCAAA",
+        "KCAAA",
+        "column:XYAD",
+        "XYAD",
+        "column:XYAABA",
+        "XYAABA",
+        "column:XYABA",
+        "XYABA",
+        "column:XYACF",
+        "XYACF",
+        "column:XYACB",
+        "XYACB",
+        "column:XYACA",
+        "XYACA",
+        "column:PKGLC",
+        "PKGLC",
+        "column:XYACJ",
+        "XYACJ",
+        "column:XYACD",
+        "XYACD",
+        "column:PKGKPE",
+        "PKGKPE",
+        "column:PKGKQ",
+        "PKGKQ",
+        "column:PKHFE",
+        "PKHFE",
+        "column:数据",
+        "数据"
+      ]
+    },
+    "kckcRsp": {
+      "type": "object",
+      "properties": {
+        "total": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "kckcs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Kckc"
+          },
+          "description": " 矿产勘查工作概况"
+        }
+      },
+      "title": "kckcRsp",
+      "required": [
+        "total",
+        "kckcs"
+      ]
+    },
+    "kcmcRsp": {
+      "type": "object",
+      "properties": {
+        "total": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "kcmcs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Kcmc"
+          },
+          "description": " 主要可采煤层特征"
+        }
+      },
+      "title": "kcmcRsp",
+      "required": [
+        "total",
+        "kcmcs"
+      ]
+    },
+    "kcqlRsp": {
+      "type": "object",
+      "properties": {
+        "total": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "kcqls": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Kcql"
+          },
+          "description": " 勘查区资源量"
+        }
+      },
+      "title": "kcqlRsp",
+      "required": [
+        "total",
+        "kcqls"
+      ]
+    },
+    "kttzRsp": {
+      "type": "object",
+      "properties": {
+        "total": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "kttzs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Kttz"
+          },
+          "description": " 矿体特征"
+        }
+      },
+      "title": "kttzRsp",
+      "required": [
+        "total",
+        "kttzs"
+      ]
+    },
+    "mctzRsp": {
+      "type": "object",
+      "properties": {
+        "total": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "mctzs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Mctz"
+          },
+          "description": " 煤矿体特征"
+        }
+      },
+      "title": "mctzRsp",
+      "required": [
+        "total",
+        "mctzs"
+      ]
+    },
+    "xksyRsp": {
+      "type": "object",
+      "properties": {
+        "total": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "xksys": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Xksy"
+          },
+          "description": " 选矿试验"
+        }
+      },
+      "title": "xksyRsp",
+      "required": [
+        "total",
+        "xksys"
       ]
     }
   },

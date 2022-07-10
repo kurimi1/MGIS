@@ -17,6 +17,56 @@ func RegisterHandlers(server *rest.Server, serverCtx *svc.ServiceContext) {
 				Path:    "/K",
 				Handler: ListHandler(serverCtx),
 			},
+			{
+				Method:  http.MethodGet,
+				Path:    "/Kqdz",
+				Handler: KqdzHandler(serverCtx),
+			},
+			{
+				Method:  http.MethodGet,
+				Path:    "/Kccl",
+				Handler: KcclHandler(serverCtx),
+			},
+			{
+				Method:  http.MethodGet,
+				Path:    "/Kcjj",
+				Handler: KcjjHandler(serverCtx),
+			},
+			{
+				Method:  http.MethodGet,
+				Path:    "/Kcjs",
+				Handler: KcjsHandler(serverCtx),
+			},
+			{
+				Method:  http.MethodGet,
+				Path:    "/Kckc",
+				Handler: KckcHandler(serverCtx),
+			},
+			{
+				Method:  http.MethodGet,
+				Path:    "/Kcmc",
+				Handler: KcmcHandler(serverCtx),
+			},
+			{
+				Method:  http.MethodGet,
+				Path:    "/Kcql",
+				Handler: KcqlHandler(serverCtx),
+			},
+			{
+				Method:  http.MethodGet,
+				Path:    "/Kttz",
+				Handler: KttzHandler(serverCtx),
+			},
+			{
+				Method:  http.MethodGet,
+				Path:    "/Mctz",
+				Handler: MctzHandler(serverCtx),
+			},
+			{
+				Method:  http.MethodGet,
+				Path:    "/Xksy",
+				Handler: XksyHandler(serverCtx),
+			},
 		},
 		rest.WithPrefix("/api"),
 	)

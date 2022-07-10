@@ -2,10 +2,10 @@
 package types
 
 type Request struct {
-	Province string `json:"province"`
-	Mine     string `json:"mine,optional"`
-	Page     int    `json:"page"`
-	Size     int    `json:"size"`
+	Province string `form:"province,optional"`
+	Mine     string `form:"mine,optional"`
+	Page     int    `form:"page"`
+	Size     int    `form:"size"`
 }
 
 type Kcdj struct {
@@ -27,7 +27,238 @@ type Kcdj struct {
 	Shuju  string `gorm:"column:数据" json:"数据"`
 }
 
+type Kqdz struct {
+	KCAAA  string  `gorm:"column:KCAAA" json:"KCAAA"`
+	PKGKAA string  `gorm:"column:PKGKAA" json:"PKGKAA"`
+	DSB    string  `gorm:"column:DSB" json:"DSB"`
+	YSACAA string  `gorm:"column:YSACAA" json:"YSACAA"`
+	YSACAB string  `gorm:"column:YSACAB" json:"YSACAB"`
+	YSACC  string  `gorm:"column:YSACC" json:"YSACC"`
+	GZAM   string  `gorm:"column:GZAM" json:"GZAM"`
+	KCAJ   string  `gorm:"column:KCAJ" json:"KCAJ"`
+	DHBIA  string  `gorm:"column:DHBIA" json:"DHBIA"`
+	DHBHAB float32 `gorm:"column:DHBHAB" json:"DHBHAB"`
+	PKHFE  string  `gorm:"column:PKHFE" json:"PKHFE"`
+	PKHFB  string  `gorm:"column:PKHFB" json:"PKHFB"`
+	DHCAA  string  `gorm:"column:DHCAA" json:"DHCAA"`
+	DHC    string  `gorm:"column:DHC" json:"DHC"`
+	Shuju  string  `gorm:"column:数据" json:"数据"`
+}
+
+type Kccl struct {
+	KCAAA  string  `gorm:"column:KCAAA" json:"KCAAA"`
+	KCC    string  `gorm:"column:KCC" json:"KCC"`
+	PKCE   string  `gorm:"column:PKCE" json:"PKCE"`
+	PKCABF float64 `gorm:"column:PKCABF" json:"PKCABF"`
+	PKCABA float64 `gorm:"column:PKCABA" json:"PKCABA"`
+	PKCABB float64 `gorm:"column:PKCABB" json:"PKCABB"`
+	PKCABC float64 `gorm:"column:PKCABC" json:"PKCABC"`
+	PKCABD float64 `gorm:"column:PKCABD" json:"PKCABD"`
+	PKCABT float64 `gorm:"column:PKCABT" json:"PKCABT"`
+	PKCABU float64 `gorm:"column:PKCABU" json:"PKCABU"`
+	PKCABV float64 `gorm:"column:PKCABV" json:"PKCABV"`
+	Shuju  string  `gorm:"column:数据" json:"数据"`
+}
+
+type Kcjj struct {
+	KCAAA  string  `gorm:"column:KCAAA" json:"KCAAA"`
+	JJGAH  float64 `gorm:"column:JJGAH" json:"JJGAH"`
+	JJGAL  int32   `gorm:"column:JJGAL" json:"JJGAL"`
+	JJGAM  string  `gorm:"column:JJGAM" json:"JJGAM"`
+	JJGHD  float64 `gorm:"column:JJGHD" json:"JJGHD"`
+	JJGDB  float64 `gorm:"column:JJGDB" json:"JJGDB"`
+	JJGJAD float64 `gorm:"column:JJGJAD" json:"JJGJAD"`
+	JJGJDF float32 `gorm:"column:JJGJDF" json:"JJGJDF"`
+	JJGKC  int32   `gorm:"column:JJGKC" json:"JJGKC"`
+	Shuju  string  `gorm:"column:数据" json:"数据"`
+}
+
+type Kcj struct {
+	KCAAA  string  `gorm:"column:KCAAA" json:"KCAAA"`
+	SWJCC  string  `gorm:"column:SWJCC" json:"SWJCC"`
+	SWNB   string  `gorm:"column:SWNB" json:"SWNB"`
+	GCAB   string  `gorm:"column:GCAB" json:"GCAB"`
+	SWJDAC float64 `gorm:"column:SWJDAC" json:"SWJDAC"`
+	SWAIA  string  `gorm:"column:SWAIA" json:"SWAIA"`
+	GCCBA  string  `gorm:"column:GCCBA" json:"GCCBA"`
+	GCBI   string  `gorm:"column:GCBI" json:"GCBI"`
+	JJGLDA string  `gorm:"column:JJGLDA" json:"JJGLDA"`
+	JJGLDB string  `gorm:"column:JJGLDB" json:"JJGLDB"`
+	BCB    string  `gorm:"column:BCB" json:"BCB"`
+	BPJ    int32   `gorm:"column:BPJ" json:"BPJ"`
+	BPWDX  string  `gorm:"column:BPWDX" json:"BPWDX"`
+	DDBWDX string  `gorm:"column:DDBWDX" json:"DDBWDX"`
+	Shuju  string  `gorm:"column:数据" json:"数据"`
+}
+
+type Kckc struct {
+	KCAAA  string  `gorm:"column:KCAAA" json:"KCAAA"`
+	QDAM   string  `gorm:"column:QDAM" json:"QDAM"`
+	QDAN   string  `gorm:"column:QDAN" json:"QDAN"`
+	QDAO   string  `gorm:"column:QDAO" json:"QDAO"`
+	QDAC   string  `gorm:"column:QDAC" json:"QDAC"`
+	QDANA  string  `gorm:"column:QDANA" json:"QDANA"`
+	PKGJ   string  `gorm:"column:PKGJ" json:"PKGJ"`
+	PKGDDA string  `gorm:"column:PKGDDA" json:"PKGDDA"`
+	PKGDDC string  `gorm:"column:PKGDDC" json:"PKGDDC"`
+	PKGDDB string  `gorm:"column:PKGDDB" json:"PKGDDB"`
+	GCJDBC float64 `gorm:"column:GCJDBC" json:"GCJDBC"`
+	PKGCC  float64 `gorm:"column:PKGCC" json:"PKGCC"`
+	GCJDBO float64 `gorm:"column:GCJDBO" json:"GCJDBO"`
+	PKIIA  string  `gorm:"column:PKIIA" json:"PKIIA"`
+	PKIIG  string  `gorm:"column:PKIIG" json:"PKIIG"`
+	PKIIH  string  `gorm:"column:PKIIH" json:"PKIIH"`
+	PKIII  string  `gorm:"column:PKIII" json:"PKIII"`
+	PKIIJ  string  `gorm:"column:PKIIJ" json:"PKIIJ"`
+	PKIIL  string  `gorm:"column:PKIIL" json:"PKIIL"`
+	MEMO   string  `gorm:"column:MEMO" json:"MEMO"`
+	Shuju  string  `gorm:"column:数据" json:"数据"`
+}
+
+type Kcmc struct {
+	KCAAA  string  `gorm:"column:KCAAA" json:"KCAAA"`
+	MDAGA  string  `gorm:"column:MDAGA" json:"MDAGA"`
+	MDBFNG float32 `gorm:"column:MDBFNG" json:"MDBFNG"`
+	MDAGP  string  `gorm:"column:MDAGP" json:"MDAGP"`
+	MDBEB  string  `gorm:"column:MDBEB" json:"MDBEB"`
+	MDCHWK float32 `gorm:"column:MDCHWK" json:"MDCHWK"`
+	MDHEAA float32 `gorm:"column:MDHEAA" json:"MDHEAA"`
+	MDCDC  float32 `gorm:"column:MDCDC" json:"MDCDC"`
+	MDCDF  float32 `gorm:"column:MDCDF" json:"MDCDF"`
+	MDEG   string  `gorm:"column:MDEG" json:"MDEG"`
+	Shuju  string  `gorm:"column:数据" json:"数据"`
+}
+
+type Kcql struct {
+	KCAAA  string  `gorm:"column:KCAAA" json:"KCAAA"`
+	DWAACJ string  `gorm:"column:DWAACJ" json:"DWAACJ"`
+	DWAADJ string  `gorm:"column:DWAADJ" json:"DWAADJ"`
+	MDAAC  string  `gorm:"column:MDAAC" json:"MDAAC"`
+	MDAREA float32 `gorm:"column:MDAREA" json:"MDAREA"`
+	MDBA   string  `gorm:"column:MDBA" json:"MDBA"`
+	MDCP   string  `gorm:"column:MDCP" json:"MDCP"`
+	MDEG   string  `gorm:"column:MDEG" json:"MDEG"`
+	MDBFNQ string  `gorm:"column:MDBFNQ" json:"MDBFNQ"`
+	PKBBB  float64 `gorm:"column:PKBBB" json:"PKBBB"`
+	Shuju  string  `gorm:"column:数据" json:"数据"`
+}
+
+type Kttz struct {
+	KCAAA  string  `gorm:"column:KCAAA" json:"KCAAA"`
+	PKGKI  int32   `gorm:"column:PKGKI" json:"PKGKI"`
+	PKGKIA int32   `gorm:"column:PKGKIA" json:"PKGKIA"`
+	PKGKDA string  `gorm:"column:PKGKDA" json:"PKGKDA"`
+	PKGKJ  string  `gorm:"column:PKGKJ" json:"PKGKJ"`
+	PKGKGA string  `gorm:"column:PKGKGA" json:"PKGKGA"`
+	PKGKGB string  `gorm:"column:PKGKGB" json:"PKGKGB"`
+	PKGKGC string  `gorm:"column:PKGKGC" json:"PKGKGC"`
+	PKGKGF string  `gorm:"column:PKGKGF" json:"PKGKGF"`
+	PKGKFA float32 `gorm:"column:PKGKFA" json:"PKGKFA"`
+	PKGKFB float32 `gorm:"column:PKGKFB" json:"PKGKFB"`
+	PKCDA  float32 `gorm:"column:PKCDA" json:"PKCDA"`
+	PKGADH string  `gorm:"column:PKGADH" json:"PKGADH"`
+	PKGKQ  string  `gorm:"column:PKGKQ" json:"PKGKQ"`
+	KCAPA  string  `gorm:"column:KCAPA" json:"KCAPA"`
+	KCAPB  string  `gorm:"column:KCAPB" json:"KCAPB"`
+	KWBH   string  `gorm:"column:KWBH" json:"KWBH"`
+	PKCDD  string  `gorm:"column:PKCDD" json:"PKCDD"`
+	PKGKU  string  `gorm:"column:PKGKU" json:"PKGKU"`
+	PKGKPH string  `gorm:"column:PKGKPH" json:"PKGKPH"`
+	PKGKTA string  `gorm:"column:PKGKTA" json:"PKGKTA"`
+	PKGKT  string  `gorm:"column:PKGKT" json:"PKGKT"`
+	Shuju  string  `gorm:"column:数据" json:"数据"`
+}
+
+type Mctz struct {
+	KCAAA  string  `gorm:"column:KCAAA" json:"KCAAA"`
+	MDABA  string  `gorm:"column:MDABA" json:"MDABA"`
+	MDAFA  int32   `gorm:"column:MDAFA" json:"MDAFA"`
+	MDAFB  int32   `gorm:"column:MDAFB" json:"MDAFB"`
+	MDAFH  float64 `gorm:"column:MDAFH" json:"MDAFH"`
+	MDBFNG float64 `gorm:"column:MDBFNG" json:"MDBFNG"`
+	MDBEB  string  `gorm:"column:MDBEB" json:"MDBEB"`
+	MDDABA string  `gorm:"column:MDDABA" json:"MDDABA"`
+	MDEG   string  `gorm:"column:MDEG" json:"MDEG"`
+	MDAGI  string  `gorm:"column:MDAGI" json:"MDAGI"`
+	MDAGO  string  `gorm:"column:MDAGO" json:"MDAGO"`
+	MDABC  string  `gorm:"column:MDABC" json:"MDABC"`
+	MDAGD  string  `gorm:"column:MDAGD" json:"MDAGD"`
+	MDAGF  string  `gorm:"column:MDAGF" json:"MDAGF"`
+	MDBLIA string  `gorm:"column:MDBLIA" json:"MDBLIA"`
+	MDBK   float32 `gorm:"column:MDBK" json:"MDBK"`
+	MDBMB  string  `gorm:"column:MDBMB" json:"MDBMB"`
+	MDBMF  string  `gorm:"column:MDBMF" json:"MDBMF"`
+	Shuju  string  `gorm:"column:数据" json:"数据"`
+}
+
+type Xksy struct {
+	KCAAA  string  `gorm:"column:KCAAA" json:"KCAAA"`
+	XYAD   string  `gorm:"column:XYAD" json:"XYAD"`
+	XYAABA string  `gorm:"column:XYAABA" json:"XYAABA"`
+	XYABA  string  `gorm:"column:XYABA" json:"XYABA"`
+	XYACF  float32 `gorm:"column:XYACF" json:"XYACF"`
+	XYACB  string  `gorm:"column:XYACB" json:"XYACB"`
+	XYACA  string  `gorm:"column:XYACA" json:"XYACA"`
+	PKGLC  string  `gorm:"column:PKGLC" json:"PKGLC"`
+	XYACJ  float32 `gorm:"column:XYACJ" json:"XYACJ"`
+	XYACD  string  `gorm:"column:XYACD" json:"XYACD"`
+	PKGKPE string  `gorm:"column:PKGKPE" json:"PKGKPE"`
+	PKGKQ  string  `gorm:"column:PKGKQ" json:"PKGKQ"`
+	PKHFE  string  `gorm:"column:PKHFE" json:"PKHFE"`
+	Shuju  string  `gorm:"column:数据" json:"数据"`
+}
+
 type Response struct {
 	Total int    `json:"total"`
 	Kcdjs []Kcdj `json:"kcdjs"` // 矿产地基本情况
+}
+
+type KqdzRsp struct {
+	Total int    `json:"total"`
+	Kqdzs []Kqdz `json:"kqdzs"` // 矿区地质情况
+}
+
+type KcclRsp struct {
+	Total int    `json:"total"`
+	Kccls []Kccl `json:"kccls"` // 矿产储量
+}
+
+type KcjjRsp struct {
+	Total int    `json:"total"`
+	Kcjjs []Kcjj `json:"kcjjs"` // 矿床技术经济评价
+}
+
+type KcjsRsp struct {
+	Total int   `json:"total"`
+	Kcjs  []Kcj `json:"kcjs"` // 开采技术条件
+}
+
+type KckcRsp struct {
+	Total int    `json:"total"`
+	Kckcs []Kckc `json:"kckcs"` // 矿产勘查工作概况
+}
+
+type KcmcRsp struct {
+	Total int    `json:"total"`
+	Kcmcs []Kcmc `json:"kcmcs"` // 主要可采煤层特征
+}
+
+type KcqlRsp struct {
+	Total int    `json:"total"`
+	Kcqls []Kcql `json:"kcqls"` // 勘查区资源量
+}
+
+type KttzRsp struct {
+	Total int    `json:"total"`
+	Kttzs []Kttz `json:"kttzs"` // 矿体特征
+}
+
+type MctzRsp struct {
+	Total int    `json:"total"`
+	Mctzs []Mctz `json:"mctzs"` // 煤矿体特征
+}
+
+type XksyRsp struct {
+	Total int    `json:"total"`
+	Xksys []Xksy `json:"xksys"` // 选矿试验
 }
