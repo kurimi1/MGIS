@@ -28,7 +28,7 @@ func NewKcjjLogic(ctx context.Context, svcCtx *svc.ServiceContext) *KcjjLogic {
 
 func (l *KcjjLogic) Kcjj(req *types.Request) (resp *types.KcjjRsp, err error) {
 	// todo: add your logic here and delete this line
-	province := fmt.Sprintf("^%s[1-9]", req.Province)
+	province := fmt.Sprintf("^%s[0-9]", req.Province)
 	kcjj := l.svcCtx.Dao.Kcjj
 	var results []*model.Kcjj
 	var total int64

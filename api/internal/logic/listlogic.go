@@ -30,7 +30,7 @@ func (l *ListLogic) List(req *types.Request) (resp *types.Response, err error) {
 	// todo: add your logic here and delete this line
 	// 根据省份和矿种查询
 	// 省份取前两位用正则
-	province := fmt.Sprintf("^%s[1-9]", req.Province)
+	province := fmt.Sprintf("^%s[0-9]", req.Province)
 	kcdj := l.svcCtx.Dao.Kcdj
 	// 判断mine是否为空
 	var results []*model.Kcdj

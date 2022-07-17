@@ -28,7 +28,7 @@ func NewKcqlLogic(ctx context.Context, svcCtx *svc.ServiceContext) *KcqlLogic {
 
 func (l *KcqlLogic) Kcql(req *types.Request) (resp *types.KcqlRsp, err error) {
 	// todo: add your logic here and delete this line
-	province := fmt.Sprintf("^%s[1-9]", req.Province)
+	province := fmt.Sprintf("^%s[0-9]", req.Province)
 	kcql := l.svcCtx.Dao.Kcql
 	var results []*model.Kcql
 	var total int64

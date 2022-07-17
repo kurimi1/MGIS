@@ -28,7 +28,7 @@ func NewXksyLogic(ctx context.Context, svcCtx *svc.ServiceContext) *XksyLogic {
 
 func (l *XksyLogic) Xksy(req *types.Request) (resp *types.XksyRsp, err error) {
 	// todo: add your logic here and delete this line
-	province := fmt.Sprintf("^%s[1-9]", req.Province)
+	province := fmt.Sprintf("^%s[0-9]", req.Province)
 	xksy := l.svcCtx.Dao.Xksy
 	var results []*model.Xksy
 	var total int64

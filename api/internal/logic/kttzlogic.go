@@ -28,7 +28,7 @@ func NewKttzLogic(ctx context.Context, svcCtx *svc.ServiceContext) *KttzLogic {
 
 func (l *KttzLogic) Kttz(req *types.Request) (resp *types.KttzRsp, err error) {
 	// todo: add your logic here and delete this line
-	province := fmt.Sprintf("^%s[1-9]", req.Province)
+	province := fmt.Sprintf("^%s[0-9]", req.Province)
 	kttz := l.svcCtx.Dao.Kttz
 	var results []*model.Kttz
 	var total int64

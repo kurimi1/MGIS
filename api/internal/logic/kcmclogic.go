@@ -28,7 +28,7 @@ func NewKcmcLogic(ctx context.Context, svcCtx *svc.ServiceContext) *KcmcLogic {
 
 func (l *KcmcLogic) Kcmc(req *types.Request) (resp *types.KcmcRsp, err error) {
 	// todo: add your logic here and delete this line
-	province := fmt.Sprintf("^%s[1-9]", req.Province)
+	province := fmt.Sprintf("^%s[0-9]", req.Province)
 	kcmc := l.svcCtx.Dao.Kcmc
 	var results []*model.Kcmc
 	var total int64

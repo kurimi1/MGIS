@@ -340,4 +340,5 @@ service MGIS-api {
 	)
 	@handler Xksy
 	get /Xksy(Request) returns (xksyRsp)
+
 }

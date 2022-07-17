@@ -28,7 +28,7 @@ func NewMctzLogic(ctx context.Context, svcCtx *svc.ServiceContext) *MctzLogic {
 
 func (l *MctzLogic) Mctz(req *types.Request) (resp *types.MctzRsp, err error) {
 	// todo: add your logic here and delete this line
-	province := fmt.Sprintf("^%s[1-9]", req.Province)
+	province := fmt.Sprintf("^%s[0-9]", req.Province)
 	mctz := l.svcCtx.Dao.Mctz
 	var results []*model.Mctz
 	var total int64

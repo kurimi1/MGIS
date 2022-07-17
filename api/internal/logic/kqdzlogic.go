@@ -30,7 +30,7 @@ func (l *KqdzLogic) Kqdz(req *types.Request) (resp *types.KqdzRsp, err error) {
 	// todo: add your logic here and delete this line
 	// 根据省份查询
 	// 省份取前两位用正则
-	province := fmt.Sprintf("^%s[1-9]", req.Province)
+	province := fmt.Sprintf("^%s[0-9]", req.Province)
 	kqdz := l.svcCtx.Dao.Kqdz
 	var results []*model.Kqdz
 	var total int64
