@@ -89,3 +89,16 @@ db, _ := gorm.Open(mysql.Open("xxx:xxx@Jxn@tcp(xxx:xxx)/xxx?charset=utf8mb4&pars
 生成文档, 需要删除"requestBody": {},
 
 > goctl api plugin -plugin goctl-swagger="swagger -filename MGIS.json" -api *.api -dir .
+
+## 编译打包
+
+## 前端静态资源嵌入后端
+
+```go
+//go:embed dist
+var content embed.FS
+```
+
+## 交叉编译
+
+>GOOS=windows  GOARCH=amd64  go  build
